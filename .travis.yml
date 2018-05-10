@@ -19,20 +19,20 @@ before_deploy:
   - mkdir -p deploy
   - mv sws-pfb.zip deploy/sws-pfb.zip
   
-#deploy:
-#  - provider: s3
-#    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
-#    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
-#    bucket: sws-pfb-deploy # S3 버킷
-#    region: ap-northeast-2
-#    skip_cleanup: true
-#    acl: public_read
-#    local_dir: deploy # before_deploy에서 생성한 디렉토리
-#    wait-until-deployed: true
-#    on:
-#      repo: jhleon86/sws-pfb
-#      branch: master
-#
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: sws-pfa-deploy # S3 버킷  기존 pfa 버킷을 그대로 사용한다
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: public_read
+    local_dir: deploy # before_deploy에서 생성한 디렉토리
+    wait-until-deployed: true
+    on:
+      repo: jhleon86/sws-pfb
+      branch: master
+
 #  - provider: codedeploy
 #    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
 #    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값

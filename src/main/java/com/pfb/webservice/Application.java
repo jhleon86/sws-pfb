@@ -10,7 +10,7 @@ public class Application {
 	
 	public static final String APPLICATION_LOCATIONS = "spring.config.location="
 			+ "classpath:application.yml,"
-			+ "C:\\git\\app\\config\\sws-pfb\\real-application.yml,"  /*로컬(windows)*/
+			//+ "C:\\git\\app\\config\\sws-pfb\\real-application.yml,"  /*로컬(windows)*/
 			+ "app/config/sws-pfb/real-application.yml"; /*EC2*/
 
 	public static void main(String[] args) {

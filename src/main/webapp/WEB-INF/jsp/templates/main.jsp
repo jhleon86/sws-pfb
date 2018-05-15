@@ -20,7 +20,7 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
 <!--         <button type="button" class="btn btn-primary" data-toggle="modal">페이스북 로그인</button> -->
 <!--         <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
-        <div class="fb-login-button" scope="public_profile,email,publish_pages,manage_pages" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true" onlogin="fbLogin();"></div>
+        <div class="fb-login-button" scope="public_profile,email" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true" onlogin="checkLoginState();"></div>
         
 <!--         <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> -->
 

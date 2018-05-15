@@ -18,7 +18,7 @@
 
     <div class="col-md-12">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
-        
+        <button type="button" class="btn btn-primary" data-toggle="modal">페이스북 로그인</button>
         <br/>
         <br/>
         <!--  목록 출력 영역 -->
@@ -81,9 +81,10 @@
 	 <!--부트스트랩 js, jquery 추가-->
     <script src="static/js/lib/jquery.min.js"></script>
     <script src="static/js/lib/bootstrap.min.js"></script>
-    
+    <!-- facebook SDK -->
+    <script src="static/js/common/facebookSDK.js"></script>
     <!--custom js 추가-->
     <script src="static/js/app/main.js"></script>
-    
+
 </body>
 </html>

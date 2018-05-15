@@ -11,6 +11,11 @@ var main = {
         $('#btn-save').on('click', function () {
             _this.save();
         });
+        
+        /*페이스북 로그인 상태 확인*/
+        FB.getLoginStatus(function(response) {
+        	facebookLoginStatus(response);
+        });
     },
     save : function () {
         var data = {
@@ -31,8 +36,10 @@ var main = {
         }).fail(function (error) {
             alert(error);
         });
+    },
+    facebookLoginStatus : function(response){
+    	console.log(response);
     }
-
 };
 
 main.init();

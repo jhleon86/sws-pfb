@@ -50,6 +50,11 @@
             </tbody>
         </table>
         
+        <form action="https://plafoo.xyz:3000/imageUpload" method="post" enctype="multipart/form-data">
+<!-- 		<form action="http://localhost:3000/imageUpload" method="post" enctype="multipart/form-data"> -->
+        	<input type="file" name="img">
+        	<input type="submit">
+        </form>
     </div>
 
     <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">

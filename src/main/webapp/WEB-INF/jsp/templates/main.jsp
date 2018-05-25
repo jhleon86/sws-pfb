@@ -53,8 +53,7 @@
         <form action="https://plafoo.xyz:3000/imageUpload" method="post" enctype="multipart/form-data">
 <!-- 		<form action="http://localhost:3000/imageUpload" method="post" enctype="multipart/form-data"> -->
 			<input type="text" name="item" value="1234">
-        	<input type="file" name="img">
-        	<input type="text" name="item" value="1234"> 
+        	<input type="file" name="img"> 
         	<input type="submit">
         </form>
     </div>
